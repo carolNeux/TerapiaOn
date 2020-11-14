@@ -1,38 +1,60 @@
+* {
+  font-family: 'splendid66';
+}
 body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
-@font-face {
-  font-family: splendid66;
-  src: url(/images/SplendidB66.ttf);
+.header {
+  margin: 2rem;
 }
 
 .container {
-  border: 1px solid lightblue;
-  border-radius: 10px;
+  font-family: 'splendid66';
+  border-radius: 20px;
   text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .main {
-  border: 1px solid lightblue;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+  border-radius: 15px;
+
+  margin: 25px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .text {
-  border: 1px solid red;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 20px;
   justify-content: center;
+  text-align: justify;
   align-items: center;
 }
+
 .item {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: baseline;
+  padding: 10px;
 }
 .item1 {
-  align-items: center;
-  text-align: center;
+  width: 40rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: white;
 }
-.info {
-  width: 100%;
+
+.foto {
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  height: 40px;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
 }
