@@ -1,0 +1,7 @@
+@font-face {
+  font-family: splendid;
+  src: url(/fonts/SplendidB.woff);
+}
+h2 {
+  font-family: splendid;
+}
