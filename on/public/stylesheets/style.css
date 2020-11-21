@@ -6,91 +6,124 @@
 }
 body {
   padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 14px;
+  font-family: 'Courier New', Courier, monospace;
 }
 .header {
   display: flex;
-  flex-direction: row;
-
-  padding-top: 2rem;
-  margin: 2rem;
 
   justify-content: space-around;
+
+  margin-top: 1rem;
 }
 .logo img {
-  width: 130%;
+  width: 150%;
 }
 
 .icons {
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
 }
 .icons a img {
-  width: 30%;
-}
-
-.icons a img:hover {
-  transform: rotateY(360deg);
+  width: 50%;
 }
 
 .container {
-  background-color: lightblue;
   font-family: 'splendid66';
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .main {
-  background-color: pink;
-  border-radius: 15px;
-  margin: 25px;
-  padding: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 18px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .text {
-  background-color: rgb(134, 162, 190);
   font-family: 'Courier New', Courier, monospace;
+  color: rgb(95, 75, 58);
   font-size: 16px;
-  border-radius: 15px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   justify-content: center;
   text-align: justify;
   align-items: center;
 }
 
 .item {
-  background-color: rgb(172, 197, 223);
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
 .item1 {
-  background-color: rgb(112, 166, 224);
   width: 40rem;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   padding: 2rem;
   margin: 15px;
-  border-radius: 15px;
-  background-color: white;
 }
-.info {
-  background-color: pink;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
+
+.item2 {
+  width: 40rem;
+  padding: 2rem;
+  margin: 15px;
 }
+
 .foto {
   width: 50%;
   border-radius: 15px;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
-  height: 40px;
-  border-radius: 15px;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
+.fruta1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fruta2 {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+.banana {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 24px;
+  padding-top: 20px;
+}
+.banana a {
+  text-decoration: none;
+  color: rgb(95, 75, 58);
+}
+
+/*** mobile***/
+@media (max-width: 780px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 70%;
+  }
+
+  .icons a img {
+    width: 50%;
+  }
+
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .banana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
