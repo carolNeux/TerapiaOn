@@ -44,6 +44,15 @@ body {
   padding-left: 20px;
   font-size: 18px;
 }
+.whatsAppGreen {
+  display: grid;
+  justify-content: flex-end;
+  color: white;
+}
+.whatsAppGreen a {
+  color: white;
+}
+
 .text {
   font-family: 'Courier New', Courier, monospace;
   color: rgb(95, 75, 58);
